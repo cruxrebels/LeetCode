@@ -46,7 +46,7 @@ https://leetcode.com/problems/smallest-string-starting-from-leaf/
 class Solution {
 public:
     string smallestFromLeaf(TreeNode* root) {
-        if (!root) return "|";
+        if (!root) return "|";  // ASCII value greater than 'z', to compare with only other child of a non-leaf node.
         if (!root->left && !root->right) return string(1, 'a' + root->val);
         return min(smallestFromLeaf(root->left), smallestFromLeaf(root->right)) + static_cast<char>('a' + root->val);
     }
