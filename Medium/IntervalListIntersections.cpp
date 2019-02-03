@@ -22,6 +22,8 @@ Note:
 0 <= A.length < 1000
 0 <= B.length < 1000
 0 <= A[i].start, A[i].end, B[i].start, B[i].end < 10^9
+
+https://leetcode.com/problems/interval-list-intersections/
 */
 
 /**
