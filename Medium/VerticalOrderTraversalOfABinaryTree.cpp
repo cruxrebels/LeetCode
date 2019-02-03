@@ -65,7 +65,8 @@ public:
         vector<vector<int>> res;
         if (!root)
             return res;
-        // Since If two nodes have the same position, then the value of the node that is                  reported first is the value that is smaller.
+        // Since If two nodes have the same position, then the value of the node that is          
+        // reported first is the value that is smaller.
         map<int, map<int, set<int>>> m; // x -> y -> [1, 5 , 6]
         preorder(root, 0, 0, m);
         for (const auto& it : m) {
